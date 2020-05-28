@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    font-family: 'Balsamiq Sans', arial;
+}
+
+nav {
+    margin: 20px auto;
+    text-align: right;
+    width: 1440px;
+}
+
+nav a {
+    font-size: 2rem;
+    display: inline-block;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #555;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+nav a.reservation {
+    font-size: 2.4rem;
+    border: 2px solid black;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid black;
+    transition: .2s;
+}
+
+nav a.reservation:hover {
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    border-color: royalblue;
+}
+
+header {
+    height: 40vh;
+    background-image: url(/images/car.jpg);
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 6rem;
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 40vh;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+main {
+    max-width: 1440px;
+    margin: 5vh auto;  
+}
+
+main p.description{
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 30px 50px 30px;
+    line-height: 180%;  
+}
+
+main div.feature{
+    display: inline-block;
+    width: 33%;
+}
+
+main div.image{
+height: 200px;
+background-color: royalblue;
+margin: 20px;
+}
+
+main h2 {
+ font-size: 1.8rem;
+ text-align: center;   
+}
+
+main div.image:hover{
+    background-color: aqua;
+}
+
+footer{
+    background-color: #000;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+    letter-spacing: 3px;         
+}
+
+@media(max-width: 1024px){
+
+    
+    html {
+        font-size: 10px;
+    }
+    
+    nav {
+        margin: 0px 0;
+        text-align: right;
+        width: 100%;
+    }
+    
+    nav a {
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    nav a.reservation {
+        font-size: 1.2rem;
+        padding: 10px;
+        font-weight: bold;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    header {
+        height: 30vh;
+        background-size: cover;
+    }
+    
+    header h1 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 30vh;
+    }
+    
+    main {
+        max-width: 100%;
+        margin: 2vh auto;  
+    }
+    
+    main p.description{
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 0 10px 20px 20px;
+        line-height: 180%;  
+    }
+    
+    main div.feature{
+        width: 100%;
+    }
+    
+    main div.image{
+    height: 100px;
+    margin: 10px;
+    }
+    
+    main h2 {
+     font-size: 1.5rem;
+     text-align: center;   
+    }
+    
+    footer{
+        background-color: #000;
+    }
+    
+    footer p {
+        padding: 1rem 0;
+        font-size: 1.5rem;
+    }
+}
